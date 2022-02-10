@@ -8,9 +8,9 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
-  <HashRouter basename="/Deco-Project">
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <App />
-  </HashRouter>,
+  </BrowserRouter>,
   document.getElementById("root")
 );
 
