@@ -2,7 +2,7 @@
   "homepage": "https://thelmaguerra.github.io/Deco-Project",
   "name": "decor-app",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@googlemaps/react-wrapper": "^1.1.22",
     "@react-google-maps/api": "^2.7.0",
