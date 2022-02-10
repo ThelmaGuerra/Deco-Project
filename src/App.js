@@ -26,7 +26,7 @@ class App extends Component {
       <div className="container">
         <main className="container">
           <ScrollToTop>
-            <Routes basename="/Deco-Project">
+            <Routes>
               <Route
                 path="/"
                 element={<HomePage events={this.state.events} />}
