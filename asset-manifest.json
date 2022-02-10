@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Deco-Project/static/css/main.6ead7e78.css",
+    "main.js": "/Deco-Project/static/js/main.4e6bd30f.js",
+    "static/js/787.b14d19e7.chunk.js": "/Deco-Project/static/js/787.b14d19e7.chunk.js",
+    "index.html": "/Deco-Project/index.html",
+    "main.6ead7e78.css.map": "/Deco-Project/static/css/main.6ead7e78.css.map",
+    "main.4e6bd30f.js.map": "/Deco-Project/static/js/main.4e6bd30f.js.map",
+    "787.b14d19e7.chunk.js.map": "/Deco-Project/static/js/787.b14d19e7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ead7e78.css",
+    "static/js/main.4e6bd30f.js"
+  ]
+}
