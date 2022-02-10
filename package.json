@@ -1,5 +1,5 @@
 {
-  "homepage": "https://thelmaguerra.github.io/Deco-Project/",
+  "homepage": "https://thelmaguerra.github.io/Deco-Project",
   "name": "decor-app",
   "version": "0.1.0",
   "private": false,
@@ -50,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "react-openlayers": "^0.3.0",
     "webpack": "^5.67.0"
   }
