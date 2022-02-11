@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ScrollContainer from "react-indiana-drag-scroll";
 
 class Projects extends Component {
-  state = {}
+  state = {};
 
   render() {
     const { events } = this.props;
@@ -13,7 +13,10 @@ class Projects extends Component {
         <ScrollContainer className="projects_row">
           {events.map((event) => (
             <div key={event.name} className="projects_cell">
-              <img src={event.cover} alt={event.name} />
+              <img
+                src={process.env.PUBLIC_URL + event.cover}
+                alt={event.name}
+              />
               <h2 key={event.name}>{event.name}</h2>
             </div>
           ))}
