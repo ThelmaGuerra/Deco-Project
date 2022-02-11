@@ -6,7 +6,7 @@ class HomeContent2 extends Component {
     return (
       <div className="homeContent2">
         <img
-          src="/images/bunch-flowers-leaves-table_1304-4187.jpg"
+          src="./images/bunch-flowers-leaves-table_1304-4187.jpg"
           alt="table"
         />
         <div className="homeText2">
