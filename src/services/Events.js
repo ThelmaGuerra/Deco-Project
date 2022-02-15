@@ -9,11 +9,11 @@ const event1 = {
   coverUrl:
     "url(https://images.pexels.com/photos/1042152/pexels-photo-1042152.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
   portfolio: [
-    "/images/eventos/Evento1/luzesEvento1.jpeg",
-    "/images/eventos/Evento1/ladyEvento1.jpg",
-    "/images/eventos/Evento1/mesaEvento1.jpeg",
-    "/images/eventos/Evento1/decoraçãoEvento1.jpg",
-    "/images/eventos/Evento1/guyEvento1.jpg",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Evento1/luzesEvento1.jpeg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Evento1/ladyEvento1.jpg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Evento1/mesaEvento1.jpg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Evento1/decora%C3%A7%C3%A3oEvento1.jpg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Evento1/peopleEvento1.jpg?raw=true)",
   ],
 };
 
@@ -26,12 +26,12 @@ const event2 = {
   genre: "casamento",
   cover: "/images/eventos/Casamento3/mesaCasamento3.jpg",
   coverUrl:
-    "url(https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Casamento3/mesaCasamento3.jpg?raw=true)",
   portfolio: [
-    "/images/eventos/Casamento3/mesaCasamento3.jpg",
-    "/images/eventos/Casamento3/floresCasamento3.jpeg",
-    "/images/eventos/Casamento3/coposCasamento3.jpg",
-    "/images/eventos/Casamento3/decoraçãoCasamento3.jpg",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Casamento3/mesaCasamento3.jpg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Casamento3/floresCasamento3.jpeg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Casamento3/coposCasamento3.jpg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Casamento3/decora%C3%A7%C3%A3oCasamento3.jpg?raw=true)",
   ],
 };
 
@@ -44,12 +44,12 @@ const event3 = {
   genre: "casamento",
   cover: "/images/eventos/Casamento1/floresCasamento1.jpeg",
   coverUrl:
-    "url(https://images.pexels.com/photos/265836/pexels-photo-265836.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Casamento1/floresCasamento1.jpeg?raw=true)",
   portfolio: [
-    "/images/eventos/Casamento1/floresCasamento1.jpeg",
-    "/images/eventos/Casamento1/portaCasamento1.jpeg",
-    "/images/eventos/Casamento1/boloCasamento1.jpg",
-    "/images/eventos/Casamento1/mesaCasamento1.jpg",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Casamento1/floresCasamento1.jpeg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Casamento1/portaCasamento1.jpg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Casamento1/boloCasamento1.jpg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Casamento1/mesaCasamento1.jpg?raw=true)",
   ],
 };
 
@@ -62,12 +62,12 @@ const event4 = {
   genre: "aniversário",
   cover: "/images/eventos/Aniversário1/brindeAniversário1.jpg",
   coverUrl:
-    "url(https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Anivers%C3%A1rio1/brindeAnivers%C3%A1rio1.jpg?raw=true)",
   portfolio: [
-    "/images/eventos/Aniversário1/brindeAniversário1.jpg",
-    "/images/eventos/Aniversário1/decoraçãoAniversário1.jpg",
-    "/images/eventos/Aniversário1/pessoasAniversário1.jpg",
-    "/images/eventos/Aniversário1/coposAniversário1.jpg",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Anivers%C3%A1rio1/brindeAnivers%C3%A1rio1.jpg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Anivers%C3%A1rio1/decora%C3%A7%C3%A3oAnivers%C3%A1rio1.jpg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Anivers%C3%A1rio1/pessoasAnivers%C3%A1rio1.jpg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Anivers%C3%A1rio1/coposAnivers%C3%A1rio1.jpg?raw=true)",
   ],
 };
 
@@ -80,12 +80,12 @@ const event5 = {
   genre: "evento",
   cover: "/images/eventos/Evento2/globosEvento2.jpg",
   coverUrl:
-    "url(https://images.unsplash.com/photo-1517263904808-5dc91e3e7044?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Evento2/globosEvento2.jpg?raw=true)",
   portfolio: [
-    "/images/eventos/Evento2/globosEvento2.jpg",
-    "/images/eventos/Evento2/festaEvento2.jpg",
-    "/images/eventos/Evento2/djEvento2.jpg",
-    "/images/eventos/Evento2/globoEvento2.jpg",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Evento2/globosEvento2.jpg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Evento2/festaEvento2.jpg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Evento2/djEvento2.jpg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Evento2/globoEvento2.jpg?raw=true)",
   ],
 };
 

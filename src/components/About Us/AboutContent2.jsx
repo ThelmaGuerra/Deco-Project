@@ -90,7 +90,7 @@ class AboutContent2 extends Component {
           <div className="border2"></div>
           <p ref={this.pRef}>
             Sou fundadora e responsável pela parte criativa dos projetos da
-            Stock Name. Minha carreira começou com desenvolvimento de objetos de
+            Deco. Minha carreira começou com desenvolvimento de objetos de
             decoração para arquitetos, segmento em que continuo atuando.{" "}
             <p>
               O amor e curiosidade por arte e design e a oportunidade de viajar
@@ -99,9 +99,9 @@ class AboutContent2 extends Component {
               contemporânea de decoração.
             </p>{" "}
             Os projetos de decoração que venho executando ao longo dos anos com
-            a Stock Name nasceram do encanto que tenho por cores, detalhes,
-            formas, fotografia, paisagens, materiais, luz e tudo que remete
-            harmonia e beleza.
+            a Deco nasceram do encanto que tenho por cores, detalhes, formas,
+            fotografia, paisagens, materiais, luz e tudo que remete harmonia e
+            beleza.
           </p>
           <img
             src={process.env.PUBLIC_URL + "/images/Lorena Alves.jpeg"}

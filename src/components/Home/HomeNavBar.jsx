@@ -24,17 +24,16 @@ class HomeNavBar extends Component {
     let height = this.setRef.current.getBoundingClientRect().height;
     let clientHeight = document.documentElement.clientHeight;
 
-    if (clientHeight > top + height * 10.5) {
+    if (clientHeight > top + height * 10) {
       const ref = ReactDOM.findDOMNode(this.setRef.current);
-      document.removeEventListener("scroll", this.isInViewport);
 
-      $(document).ready(function () {
-        $(ref)
-          .hide()
-          .slideDown("5s")
-          .animate({ opacity: 1 }, { queue: false, duration: "5s" });
-      });
+      ref.style.animation = "slide-top 0.5s 0.2s ease-in-out forwards";
+      console.log("in view");
     } else {
+      const ref = ReactDOM.findDOMNode(this.setRef.current);
+      ref.style.opacity = "0";
+      ref.style.animation = "none";
+      console.log("NOT in view");
     }
   };
 

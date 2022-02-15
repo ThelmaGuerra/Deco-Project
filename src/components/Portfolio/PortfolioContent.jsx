@@ -1,14 +1,35 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import { Button } from "react-bootstrap";
+import { GiDiamondRing } from "react-icons/gi";
+import { GiGlassCelebration } from "react-icons/gi";
+import { GiPartyPopper } from "react-icons/gi";
+import { BsGrid1X2 } from "react-icons/bs";
 
 class PortfolioContent extends Component {
   state = {
     selectedGenre: "todos",
     buttons: [
-      { title: "Todos", genre: "todos" },
-      { title: "Casamento", genre: "casamento" },
-      { title: "Evento", genre: "evento" },
-      { title: "Aniversário", genre: "aniversário" },
+      {
+        title: "Todos",
+        genre: "todos",
+        icon: <BsGrid1X2 className="BsGrid1X2" />,
+      },
+      {
+        title: "Casamento",
+        genre: "casamento",
+        icon: <GiDiamondRing className="GiDiamondRing" />,
+      },
+      {
+        title: "Evento",
+        genre: "evento",
+        icon: <GiGlassCelebration className="GiGlassCelebration" />,
+      },
+      {
+        title: "Aniversário",
+        genre: "aniversário",
+        icon: <GiPartyPopper className="GiPartyPopper" />,
+      },
     ],
   };
 
@@ -23,10 +44,15 @@ class PortfolioContent extends Component {
     if (selectedGenre === "todos") {
       return events.map((event) => (
         <div className="above_div">
-          <div
-            className={event.className + " img_div"}
-            style={{ backgroundImage: event.coverUrl }}
-          ></div>
+          <NavLink
+            className="nav_link nav_link_portfolio"
+            to={"/portfolio/" + event.id}
+          >
+            <div
+              className={event.className + " img_div"}
+              style={{ backgroundImage: event.coverUrl }}
+            ></div>
+          </NavLink>
           <h2>{event.name}</h2>
           <div className="border"></div>
         </div>
@@ -37,10 +63,15 @@ class PortfolioContent extends Component {
       );
       return filterEvents.map((event) => (
         <div className="above_div">
-          <div
-            className={event.className + " img_div"}
-            style={{ backgroundImage: event.coverUrl }}
-          ></div>
+          <NavLink
+            className="nav_link nav_link_portfolio"
+            to={"/portfolio/" + event.id}
+          >
+            <div
+              className={event.className + " img_div"}
+              style={{ backgroundImage: event.coverUrl }}
+            ></div>
+          </NavLink>
           <h2>{event.name}</h2>
           <div className="border"></div>
         </div>
@@ -68,17 +99,22 @@ class PortfolioContent extends Component {
     const { buttons } = this.state;
     return (
       <div className="portfolioContent">
-        <h1>PORTFOLIO</h1>
+        <h1>PORTFÓLIO</h1>
         <div className="portfolioButtons">
           {buttons.map((button) => (
-            <Button
-              autofocus
-              onClick={() => this.handleSelectedGenre(button.genre)}
-            >
-              {button.title}
-            </Button>
+            <div className="portfolioCell">
+              <Button
+                id={button.title}
+                autofocus
+                onClick={() => this.handleSelectedGenre(button.genre)}
+              >
+                <h2>{button.title}</h2>
+              </Button>
+              {button.icon}
+            </div>
           ))}
         </div>
+
         <div className="portfolioImages">{this.handleGenre()}</div>
       </div>
     );

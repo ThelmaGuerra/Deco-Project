@@ -8,7 +8,7 @@ class AboutContent1 extends Component {
         <div className="aboutText">
           <h1>Quem somos?</h1>
           <p>
-            A Stock name é uma empresa criativa que tem como propósito oferecer
+            A Deco é uma empresa criativa que tem como propósito oferecer
             momentos de leveza, beleza e alegria através dos seus projetos de
             decoração. Acreditamos na alegria de viver, no ser humano e na
             celebração dos momentos especiais como um ato de gratidão e de

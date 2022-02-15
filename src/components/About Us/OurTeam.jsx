@@ -15,8 +15,8 @@ class OurTeam extends Component {
                 alt=""
               />
               <div className="team_detail">
-                <h2>Chris Reebals</h2>
-                <h3>Interior Designer</h3>
+                <h2>Caio Oliveira Fernandes</h2>
+                <h3>Designer de Interior</h3>
                 <p>
                   "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Nobis aperiam itaque non reiciendis ipsa repudiandae
@@ -32,8 +32,8 @@ class OurTeam extends Component {
                 alt=""
               />
               <div className="team_detail">
-                <h2>Whitney Tingle</h2>
-                <h3>Project Manager</h3>
+                <h2>Marcela Lima</h2>
+                <h3>Gerente de Projetos</h3>
                 <p>
                   "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Nobis aperiam itaque non reiciendis ipsa repudiandae
@@ -50,7 +50,7 @@ class OurTeam extends Component {
                 style={{ objectPosition: "0% 0%" }}
               />
               <div className="team_detail">
-                <h2>Whitney Tingle</h2>
+                <h2>Davi Araújo Dantas</h2>
                 <h3>Project Manager</h3>
                 <p>
                   "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -67,7 +67,7 @@ class OurTeam extends Component {
                 alt=""
               />
               <div className="team_detail">
-                <h2>Whitney Tingle</h2>
+                <h2>Carol Sabino</h2>
                 <h3>Project Manager</h3>
                 <p>
                   "Lorem ipsum, dolor sit amet consectetur adipisicing elit.

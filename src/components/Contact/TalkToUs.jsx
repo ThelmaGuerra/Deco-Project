@@ -4,8 +4,8 @@ class TalkToUs extends Component {
   constructor(props) {
     super(props);
     this.state = { value: "" };
-    this.state = { name: "" };
-    this.state = { email: "" };
+    this.state = { name: "Nome" };
+    this.state = { email: "Email" };
     this.state = { message: "" };
 
     this.handleNameChange = this.handleNameChange.bind(this);
@@ -36,31 +36,31 @@ class TalkToUs extends Component {
       <div className="talk_to_us">
         <div className="talk_to_us_block">
           <div className="talk_to_us_content">
-            <h1>Fale com a gente!</h1>
+            <h1>Fale Conosco</h1>
             <form onSubmit={this.handleSubmit}>
               <label>
-                Nome *
                 <input
                   type="text"
                   value={this.state.name}
                   onChange={this.handleNameChange}
+                  placeholder="Nome"
                 />
               </label>
               <label>
-                Email *
                 <input
                   type="text"
                   value={this.state.email}
                   onChange={this.handleEmailChange}
+                  placeholder="Email"
                 />
               </label>
               <label className="message_label">
-                Mensagem *
                 <textarea
                   id="message_input"
                   type="text"
                   value={this.state.message}
                   onChange={this.handleMessageChange}
+                  placeholder="Messagem"
                 />
               </label>
               <input className="submit_button" type="submit" value="Enviar" />

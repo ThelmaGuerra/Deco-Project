@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import NavBar from "../../NavBar";
+import EventoContent1 from "./EventContent1";
 
 class EventPage extends Component {
   state = {};
@@ -6,8 +8,8 @@ class EventPage extends Component {
     const { event } = this.props;
     return (
       <div>
-        <h1>AAAAAAAAAAAAAAAAAAAA</h1>
-        <img src={event.cover} alt="" />
+        <NavBar />
+        <EventoContent1 event={event} />
       </div>
     );
   }
