@@ -98,11 +98,11 @@ const event6 = {
   genre: "evento",
   cover: "/images/eventos/Evento3/foto1Evento3.jpg",
   coverUrl:
-    "url(https://images.unsplash.com/photo-1568953324602-3ed06e9815c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Evento3/foto1Evento3.jpg?raw=true)",
   portfolio: [
-    "/images/eventos/Evento3/foto1Evento3.jpg",
-    "/images/eventos/Evento3/foto2Evento3.jpeg",
-    "/images/eventos/Evento3/foto3Evento3.jpg",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Evento3/foto1Evento3.jpg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Evento3/foto2Evento3.jpeg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Evento3/foto3Evento3.jpg?raw=true)",
   ],
 };
 
@@ -115,11 +115,11 @@ const event7 = {
   genre: "aniversário",
   cover: "/images/eventos/Aniversário2/18Aniversário2.jpg",
   coverUrl:
-    "url(https://images.unsplash.com/photo-1556125574-d7f27ec36a06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Anivers%C3%A1rio2/18Anivers%C3%A1rio2.jpg?raw=true)",
   portfolio: [
-    "/images/eventos/Aniversário2/18Aniversário2.jpg",
-    "/images/eventos/Aniversário2/balõesAniversário2.jpg",
-    "/images/eventos/Aniversário2/velasAniversário2.jpg",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Anivers%C3%A1rio2/18Anivers%C3%A1rio2.jpg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Anivers%C3%A1rio2/bal%C3%B5esAnivers%C3%A1rio2.jpg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Anivers%C3%A1rio2/velasAnivers%C3%A1rio2.jpg?raw=true)",
   ],
 };
 
@@ -132,12 +132,12 @@ const event8 = {
   genre: "casamento",
   cover: "/images/eventos/Casamento2/salãoCasamento2.jpeg",
   coverUrl:
-    "url(https://images.pexels.com/photos/2306281/pexels-photo-2306281.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Casamento2/sal%C3%A3oCasamento2.jpeg?raw=true)",
   portfolio: [
-    "/images/eventos/Casamento2/salãoCasamento2.jpeg",
-    "/images/eventos/Casamento2/floresCasamento2.jpg",
-    "/images/eventos/Casamento2/mesaCasamento2.jpg",
-    "/images/eventos/Casamento2/comidaCasamento2.jpg",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Casamento2/sal%C3%A3oCasamento2.jpeg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Casamento2/floresCasamento2.jpg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Casamento2/mesaCasamento2.jpg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Casamento2/comidaCasamento2.jpg?raw=true)",
   ],
 };
 
@@ -150,11 +150,11 @@ const event9 = {
   genre: "aniversário",
   cover: "/images/eventos/Aniversário3/mesaAniversário3.jpg",
   coverUrl:
-    "url(https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Anivers%C3%A1rio3/mesaAnivers%C3%A1rio3.jpg?raw=true)",
   portfolio: [
-    "/images/eventos/Aniversário3/mesaAniversário3.jpg",
-    "/images/eventos/Aniversário3/balõesAniversário3.jpg",
-    "/images/eventos/Aniversário3/coposAniversário3.jpg",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Anivers%C3%A1rio3/mesaAnivers%C3%A1rio3.jpg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Anivers%C3%A1rio3/bal%C3%B5esAnivers%C3%A1rio3.jpg?raw=true)",
+    "url(https://github.com/ThelmaGuerra/Deco-Images/blob/main/images/eventos/Anivers%C3%A1rio3/coposAnivers%C3%A1rio3.jpg?raw=true)",
   ],
 };
 

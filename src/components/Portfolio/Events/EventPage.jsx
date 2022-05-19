@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import NavBar from "../../NavBar";
 import EventoContent1 from "./EventContent1";
+import Footer from "./../../Footer";
 
 class EventPage extends Component {
   state = {};
@@ -10,6 +11,7 @@ class EventPage extends Component {
       <div>
         <NavBar />
         <EventoContent1 event={event} />
+        <Footer />
       </div>
     );
   }

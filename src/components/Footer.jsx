@@ -4,6 +4,7 @@ import { FiTwitter, FiInstagram, FiFacebook } from "react-icons/fi";
 
 class Footer extends Component {
   state = {};
+
   render() {
     return (
       <div className="footer">
