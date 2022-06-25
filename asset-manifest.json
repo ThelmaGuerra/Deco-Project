@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Deco-Project/static/css/main.907c6e10.css",
-    "main.js": "/Deco-Project/static/js/main.6d8b3b5b.js",
+    "main.css": "/Deco-Project/static/css/main.eccca1c7.css",
+    "main.js": "/Deco-Project/static/js/main.d4a0ae05.js",
     "static/js/787.b14d19e7.chunk.js": "/Deco-Project/static/js/787.b14d19e7.chunk.js",
     "index.html": "/Deco-Project/index.html",
-    "main.907c6e10.css.map": "/Deco-Project/static/css/main.907c6e10.css.map",
-    "main.6d8b3b5b.js.map": "/Deco-Project/static/js/main.6d8b3b5b.js.map",
+    "main.eccca1c7.css.map": "/Deco-Project/static/css/main.eccca1c7.css.map",
+    "main.d4a0ae05.js.map": "/Deco-Project/static/js/main.d4a0ae05.js.map",
     "787.b14d19e7.chunk.js.map": "/Deco-Project/static/js/787.b14d19e7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.907c6e10.css",
-    "static/js/main.6d8b3b5b.js"
+    "static/css/main.eccca1c7.css",
+    "static/js/main.d4a0ae05.js"
   ]
 }
