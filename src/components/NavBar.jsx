@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import { CgMenu } from "react-icons/cg";
 
 class NavBar extends Component {
   state = {};
@@ -29,6 +30,9 @@ class NavBar extends Component {
             </NavLink>
           </li>
         </ul>
+        <div className="navbar_button">
+          <CgMenu />
+        </div>
       </div>
     );
   }

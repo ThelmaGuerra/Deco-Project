@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import NavBar from "../NavBar";
 import CoverNavBar from "./CoverNavBar";
 
 class HomeCover extends Component {

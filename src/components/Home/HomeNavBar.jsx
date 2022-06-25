@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import { NavLink } from "react-router-dom";
-import $ from "jquery";
+import { CgMenu } from "react-icons/cg";
 
 class HomeNavBar extends Component {
   state = {};
@@ -20,14 +20,15 @@ class HomeNavBar extends Component {
   }
 
   isInViewport = () => {
+    if (!this.setRef.current) return;
     let top = this.setRef.current.getBoundingClientRect().top;
     let height = this.setRef.current.getBoundingClientRect().height;
     let clientHeight = document.documentElement.clientHeight;
 
-    if (clientHeight > top + height * 10) {
+    if (clientHeight > top * height) {
       const ref = ReactDOM.findDOMNode(this.setRef.current);
 
-      ref.style.animation = "slide-top 0.5s 0.2s ease-in-out forwards";
+      ref.style.animation = "slide-top 0.3s ease-in-out forwards";
       console.log("in view");
     } else {
       const ref = ReactDOM.findDOMNode(this.setRef.current);
@@ -62,6 +63,9 @@ class HomeNavBar extends Component {
             </NavLink>
           </li>
         </ul>
+        <div className="navbar_button">
+          <CgMenu />
+        </div>
       </div>
     );
   }

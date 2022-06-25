@@ -5,10 +5,12 @@ import { GiDiamondRing } from "react-icons/gi";
 import { GiGlassCelebration } from "react-icons/gi";
 import { GiPartyPopper } from "react-icons/gi";
 import { BsGrid1X2 } from "react-icons/bs";
+import Select from "react-select";
 
 class PortfolioContent extends Component {
   state = {
     selectedGenre: "todos",
+    currentMultiSelectionIcon: <BsGrid1X2 className="BsGrid1X2" />,
     buttons: [
       {
         title: "Todos",
@@ -31,11 +33,34 @@ class PortfolioContent extends Component {
         icon: <GiPartyPopper className="GiPartyPopper" />,
       },
     ],
+    multi_selection_options: [
+      {
+        value: "todos",
+        label: "Todos",
+        icon: <BsGrid1X2 className="BsGrid1X2" />,
+      },
+      {
+        value: "casamento",
+        label: "Casamento",
+        icon: <GiDiamondRing className="GiDiamondRing" />,
+      },
+      {
+        value: "evento",
+        label: "Evento",
+        icon: <GiGlassCelebration className="GiGlassCelebration" />,
+      },
+      {
+        value: "aniversário",
+        label: "Aniversário",
+        icon: <GiPartyPopper className="GiPartyPopper" />,
+      },
+    ],
   };
 
   constructor(props) {
     super(props);
     this.setRef = React.createRef();
+    this.MultiSelectRef = React.createRef();
   }
 
   handleGenre = () => {
@@ -95,8 +120,35 @@ class PortfolioContent extends Component {
     ));
   };
 
+  handleMultiSelect = (option) => {
+    this.handleSelectedGenre(option.value);
+    const currentMultiSelectionIcon = option.icon;
+    this.setState({ currentMultiSelectionIcon });
+  };
+
   render() {
-    const { buttons } = this.state;
+    const { buttons, multi_selection_options, currentMultiSelectionIcon } =
+      this.state;
+
+    const customStyles = {
+      option: (provided) => ({
+        ...provided,
+        color: "black",
+        fontFamily: "Rufina",
+      }),
+      control: (provided) => ({
+        ...provided,
+        color: "black",
+        fontFamily: "Rufina",
+        fontWeight: "500",
+      }),
+      singleValue: (provided) => ({
+        ...provided,
+        color: "black",
+        fontFamily: "Rufina",
+      }),
+    };
+
     return (
       <div className="portfolioContent">
         <h1>PORTFÓLIO</h1>
@@ -113,6 +165,16 @@ class PortfolioContent extends Component {
               {button.icon}
             </div>
           ))}
+          <Select
+            className="portfolio_multi_selection"
+            placeholder="Todos"
+            styles={customStyles}
+            options={multi_selection_options}
+            onChange={(option) => this.handleMultiSelect(option)}
+          />
+          <div className="current_multi_selection_icon">
+            {currentMultiSelectionIcon}
+          </div>
         </div>
 
         <div className="portfolioImages">{this.handleGenre()}</div>

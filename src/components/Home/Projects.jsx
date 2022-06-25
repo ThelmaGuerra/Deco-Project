@@ -20,6 +20,7 @@ class Projects extends Component {
   }
 
   isInViewport_h1 = () => {
+    if (!this.h1Ref.current) return;
     let top = this.h1Ref.current.getBoundingClientRect().top;
     let height = this.h1Ref.current.getBoundingClientRect().height;
     let clientHeight = document.documentElement.clientHeight;

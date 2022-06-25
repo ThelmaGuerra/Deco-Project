@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import HomeNavBar from "./HomeNavBar";
+import NavBar from "../NavBar";
 import HomeContent1 from "./HomeContent1";
 import HomeContent2 from "./HomeContent2";
 import Projects from "./Projects";
@@ -13,7 +14,7 @@ class HomePage extends Component {
     const { events } = this.props;
 
     return (
-      <div>
+      <div className="home_container">
         <HomeCover />
         <HomeNavBar />
         <HomeContent1 />

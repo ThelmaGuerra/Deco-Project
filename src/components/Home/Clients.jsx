@@ -33,6 +33,7 @@ class Clients extends Component {
   }
 
   isInViewport_h1 = () => {
+    if (!this.h1Ref.current) return;
     let top = this.h1Ref.current.getBoundingClientRect().top;
     let height = this.h1Ref.current.getBoundingClientRect().height;
     let clientHeight = document.documentElement.clientHeight;
@@ -49,6 +50,7 @@ class Clients extends Component {
   };
 
   isInViewport_logo1 = () => {
+    if (!this.logo1Ref.current) return;
     let top = this.logo1Ref.current.getBoundingClientRect().top;
     let height = this.logo1Ref.current.getBoundingClientRect().height;
     let clientHeight = document.documentElement.clientHeight;
@@ -65,6 +67,7 @@ class Clients extends Component {
   };
 
   isInViewport_logo2 = () => {
+    if (!this.logo2Ref.current) return;
     let top = this.logo2Ref.current.getBoundingClientRect().top;
     let height = this.logo2Ref.current.getBoundingClientRect().height;
     let clientHeight = document.documentElement.clientHeight;
@@ -81,6 +84,7 @@ class Clients extends Component {
   };
 
   isInViewport_logo3 = () => {
+    if (!this.logo3Ref.current) return;
     let top = this.logo3Ref.current.getBoundingClientRect().top;
     let height = this.logo3Ref.current.getBoundingClientRect().height;
     let clientHeight = document.documentElement.clientHeight;
@@ -97,6 +101,7 @@ class Clients extends Component {
   };
 
   isInViewport_logo4 = () => {
+    if (!this.logo4Ref.current) return;
     let top = this.logo4Ref.current.getBoundingClientRect().top;
     let height = this.logo4Ref.current.getBoundingClientRect().height;
     let clientHeight = document.documentElement.clientHeight;
@@ -113,6 +118,7 @@ class Clients extends Component {
   };
 
   isInViewport_logo5 = () => {
+    if (!this.logo5Ref.current) return;
     let top = this.logo5Ref.current.getBoundingClientRect().top;
     let height = this.logo5Ref.current.getBoundingClientRect().height;
     let clientHeight = document.documentElement.clientHeight;
