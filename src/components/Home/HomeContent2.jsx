@@ -41,7 +41,7 @@ class HomeContent2 extends Component {
     if (clientHeight > top + height) {
       const ref = ReactDOM.findDOMNode(this.h1Ref.current);
 
-      ref.style.animation = "slide-top 2s ease-in-out forwards";
+      ref.style.animation = "slide-top 1.1s 0.5s ease-in-out forwards";
     } else {
       const ref = ReactDOM.findDOMNode(this.h1Ref.current);
       ref.style.opacity = "0";
@@ -58,7 +58,7 @@ class HomeContent2 extends Component {
     if (clientHeight > top + height / 10) {
       const ref = ReactDOM.findDOMNode(this.pRef.current);
 
-      ref.style.animation = "slide-top 1s 1.5s ease-in-out forwards";
+      ref.style.animation = "slide-top 0.6s 1.5s ease-in-out forwards";
     } else {
       const ref = ReactDOM.findDOMNode(this.pRef.current);
       ref.style.animation = "none";
@@ -76,7 +76,7 @@ class HomeContent2 extends Component {
       const ref = ReactDOM.findDOMNode(this.imgRef.current);
       ref.style.opacity = "1";
       ref.style.backgroundImage = ref.style.animation =
-        "set-background-image 1s 1.1s ease-in-out forwards";
+        "set-background-image-homeContent2 1s 1.1s ease-in-out forwards";
     } else {
       const ref = ReactDOM.findDOMNode(this.imgRef.current);
       ref.style.animation = "none";
@@ -95,7 +95,7 @@ class HomeContent2 extends Component {
 
     if (clientHeight > top * height) {
       ref.style.animation =
-        "grey_background_object_animation_reverse 2s ease-in-out";
+        "grey_background_object_animation_reverse 1.5s ease-in-out";
     } else {
       ref.style.animation = "none";
       ref.style.opacity = "0";

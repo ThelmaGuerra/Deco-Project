@@ -7,6 +7,7 @@ import PortfolioPage from "./components/Portfolio/PortfolioPage";
 import EventPage from "./components/Portfolio/Events/EventPage";
 import { getEvents } from "./services/Events";
 import ScrollToTop from "./services/ScrollToTop";
+import { BsChatLeft } from "react-icons/bs";
 import "./App.css";
 
 class App extends Component {
@@ -45,6 +46,9 @@ class App extends Component {
               ))}
             </Routes>
           </ScrollToTop>
+          <div className="chat-box">
+            <BsChatLeft className="chat-box-icon" />
+          </div>
         </main>
       </div>
     );

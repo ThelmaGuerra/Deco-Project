@@ -11,28 +11,28 @@ class CoverNavBar extends Component {
     this.setRef = React.createRef();
   }
 
-  componentDidMount() {
-    document.addEventListener("scroll", this.isInViewport);
-  }
+  // componentDidMount() {
+  //   document.addEventListener("scroll", this.isInViewport);
+  // }
 
-  componentWillUnmount() {
-    document.removeEventListener("scroll", this.isInViewport);
-  }
+  // componentWillUnmount() {
+  //   document.removeEventListener("scroll", this.isInViewport);
+  // }
 
-  isInViewport = () => {
-    let top = this.setRef.current.getBoundingClientRect().top;
-    let bottom = this.setRef.current.getBoundingClientRect().bottom;
-    let height = this.setRef.current.getBoundingClientRect().height;
-    let clientHeight = document.documentElement.clientHeight;
+  // isInViewport = () => {
+  //   let top = this.setRef.current.getBoundingClientRect().top;
+  //   let bottom = this.setRef.current.getBoundingClientRect().bottom;
+  //   let height = this.setRef.current.getBoundingClientRect().height;
+  //   let clientHeight = document.documentElement.clientHeight;
 
-    if (height > bottom) {
-      const ref = ReactDOM.findDOMNode(this.setRef.current);
-      ref.style.position = "absolute";
-    } else {
-      const ref = ReactDOM.findDOMNode(this.setRef.current);
-      ref.style.position = "sticky";
-    }
-  };
+  //   if (height > bottom) {
+  //     const ref = ReactDOM.findDOMNode(this.setRef.current);
+  //     ref.style.position = "absolute";
+  //   } else {
+  //     const ref = ReactDOM.findDOMNode(this.setRef.current);
+  //     ref.style.position = "sticky";
+  //   }
+  // };
 
   render() {
     return (

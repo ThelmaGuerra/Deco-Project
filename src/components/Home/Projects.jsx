@@ -9,14 +9,20 @@ class Projects extends Component {
   constructor(props) {
     super(props);
     this.h1Ref = React.createRef();
+    this.borderRef = React.createRef();
+    this.cellRef = React.createRef();
   }
 
   componentDidMount() {
     document.addEventListener("scroll", this.isInViewport_h1);
+    document.addEventListener("scroll", this.isInViewport_border);
+    document.addEventListener("scroll", this.isInViewport_cell);
   }
 
   componentWillUnmount() {
     document.addEventListener("scroll", this.isInViewport_h1);
+    document.addEventListener("scroll", this.isInViewport_border);
+    document.addEventListener("scroll", this.isInViewport_cell);
   }
 
   isInViewport_h1 = () => {
@@ -27,11 +33,40 @@ class Projects extends Component {
 
     if (clientHeight > top + height / 15) {
       const ref = ReactDOM.findDOMNode(this.h1Ref.current);
-      ref.style.animation = "slide-top 1s 0.7s ease-in-out forwards";
+      ref.style.animation = " 0.8s 0.5s ease-in-out forwards";
     } else {
       const ref = ReactDOM.findDOMNode(this.h1Ref.current);
       ref.style.animation = "none";
-      ref.style.opacity = "0";
+    }
+  };
+
+  isInViewport_border = () => {
+    if (!this.borderRef.current) return;
+    let top = this.borderRef.current.getBoundingClientRect().top;
+    let height = this.borderRef.current.getBoundingClientRect().height;
+    let clientHeight = document.documentElement.clientHeight;
+
+    if (clientHeight > top + height / 15) {
+      const ref = ReactDOM.findDOMNode(this.borderRef.current);
+      ref.style.animation = " 1s 0.7s ease-in-out forwards";
+    } else {
+      const ref = ReactDOM.findDOMNode(this.borderRef.current);
+      ref.style.animation = "none";
+    }
+  };
+
+  isInViewport_cell = () => {
+    if (!this.cellRef.current) return;
+    let top = this.cellRef.current.getBoundingClientRect().top;
+    let height = this.cellRef.current.getBoundingClientRect().height;
+    let clientHeight = document.documentElement.clientHeight;
+
+    if (clientHeight > top + height / 2) {
+      const ref = ReactDOM.findDOMNode(this.cellRef.current);
+      ref.style.animation = " 1s 0.7s ease-in-out forwards";
+    } else {
+      const ref = ReactDOM.findDOMNode(this.cellRef.current);
+      ref.style.animation = "none";
     }
   };
 
@@ -40,20 +75,22 @@ class Projects extends Component {
     return (
       <div className="projects">
         <h1 ref={this.h1Ref}>Projetos</h1>
-        <div className="projects_border"></div>
-        <ScrollContainer className="projects_row">
-          {events.map((event) => (
-            <div key={event.name} className="projects_cell">
-              <NavLink className="nav_link" to={"/portfolio/" + event.id}>
-                <img
-                  src={process.env.PUBLIC_URL + event.cover}
-                  alt={event.name}
-                />
-              </NavLink>
-              <h2 key={event.name}>{event.name}</h2>
-            </div>
-          ))}
-        </ScrollContainer>
+        <div ref={this.borderRef} className="projects_border"></div>
+        <div ref={this.cellRef}>
+          <ScrollContainer className="projects_row">
+            {events.map((event) => (
+              <div key={event.name} className="projects_cell">
+                <NavLink className="nav_link" to={"/portfolio/" + event.id}>
+                  <img
+                    src={process.env.PUBLIC_URL + event.cover}
+                    alt={event.name}
+                  />
+                </NavLink>
+                <h2 key={event.name}>{event.name}</h2>
+              </div>
+            ))}
+          </ScrollContainer>
+        </div>
       </div>
     );
   }

@@ -66,7 +66,7 @@ class AboutContent2 extends Component {
       const ref = ReactDOM.findDOMNode(this.imgRef.current);
       console.log("element is in view");
 
-      ref.style.animation = "scale_ 1s 0.6s ease-in-out forwards";
+      ref.style.animation = "slide-left 1s 0.5s ease-in-out forwards";
     } else {
       console.log("NOT IN VIEW");
       const ref = ReactDOM.findDOMNode(this.imgRef.current);

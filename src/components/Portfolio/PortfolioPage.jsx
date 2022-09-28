@@ -12,6 +12,7 @@ class PortfolioPage extends Component {
       <div>
         <NavBar />
         <PortfolioContent events={events} />
+
         <Footer />
       </div>
     );

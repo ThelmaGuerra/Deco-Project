@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ChatBox from "../ChatBox";
 import { NavLink } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import { GiDiamondRing } from "react-icons/gi";
@@ -150,34 +151,37 @@ class PortfolioContent extends Component {
     };
 
     return (
-      <div className="portfolioContent">
-        <h1>PORTFÓLIO</h1>
-        <div className="portfolioButtons">
-          {buttons.map((button) => (
-            <div className="portfolioCell">
-              <Button
-                id={button.title}
-                autofocus
-                onClick={() => this.handleSelectedGenre(button.genre)}
-              >
-                <h2>{button.title}</h2>
-              </Button>
-              {button.icon}
+      <div className="portfolioContent-wrap">
+        <ChatBox />
+        <div className="portfolioContent">
+          <h1>PORTFÓLIO</h1>
+          <div className="portfolioButtons">
+            {buttons.map((button) => (
+              <div className="portfolioCell">
+                <Button
+                  id={button.title}
+                  autofocus
+                  onClick={() => this.handleSelectedGenre(button.genre)}
+                >
+                  <h2>{button.title}</h2>
+                </Button>
+                {button.icon}
+              </div>
+            ))}
+            <Select
+              className="portfolio_multi_selection"
+              placeholder="Todos"
+              styles={customStyles}
+              options={multi_selection_options}
+              onChange={(option) => this.handleMultiSelect(option)}
+            />
+            <div className="current_multi_selection_icon">
+              {currentMultiSelectionIcon}
             </div>
-          ))}
-          <Select
-            className="portfolio_multi_selection"
-            placeholder="Todos"
-            styles={customStyles}
-            options={multi_selection_options}
-            onChange={(option) => this.handleMultiSelect(option)}
-          />
-          <div className="current_multi_selection_icon">
-            {currentMultiSelectionIcon}
           </div>
-        </div>
 
-        <div className="portfolioImages">{this.handleGenre()}</div>
+          <div className="portfolioImages">{this.handleGenre()}</div>
+        </div>
       </div>
     );
   }
